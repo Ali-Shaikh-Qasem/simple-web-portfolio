@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+/* we made this to apply the prop only for the navbar container, not for all containers, the container can be used in many secrions in the page */
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* to bring the list and the logo at the same vertical level    */
+}
+.navbar{
+    display: flex;
+    background-color: rgba(8, 3, 47, 0.9380);
+    color: white;
+    padding: 10px;
+}
+.logo{
+    width: 20%;
+}
+/* note how we get to a, this is better in the case we have another a's in the project */
+.list ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.list ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+.about{
+    display: flex;
+    background-color: gray;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+.myinfo{
+    /* rgba is used for شفافية   */ 
+    background-color: rgba(0 ,0 ,0 , 0.2);
+    color: white;
+    padding: 10px;
+    border-top: 1px solid red;
+    border-radius: 10px;
+}
